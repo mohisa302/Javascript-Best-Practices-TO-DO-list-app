@@ -15,7 +15,6 @@ const createInputElement = (newElement, className, id, type, name, value, parent
   element.name = `${name}`;
   element.value = `${value}`;
   parent.appendChild(element);
-  args[4].appendChild(element);
   return element;
 };
 
