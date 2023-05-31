@@ -1,7 +1,9 @@
 import {
   createHTMLElement, selectElement, createTaskInputItem, createClearBtn,
 } from './createHTMLelement.js';
+
 import myTaskList from './TaskList.js';
+
 const populateTasks = () => {
   const tasksContainer = selectElement('.todolist-placeholder');
   const sortedTasks = myTaskList.tasks.sort((a, b) => (b.index - a.index));
